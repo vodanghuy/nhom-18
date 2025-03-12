@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profiles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .card-link:hover {
+            background: #357abd;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Person 1" class="card-img">
+            <div class="card-content">
+                <h2 class="card-name">Nguyễn Văn A</h2>
+                <a href="cv1.pdf" class="card-link" target="_blank">Xem CV</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" alt="Person 2" class="card-img">
+            <div class="card-content">
+                <h2 class="card-name">Trần Thị B</h2>
+                <a href="cv2.pdf" class="card-link" target="_blank">Xem CV</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Person 3" class="card-img">
+            <div class="card-content">
+                <h2 class="card-name">Lê Văn C</h2>
+                <a href="cv3.pdf" class="card-link" target="_blank">Xem CV</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Person 4" class="card-img">
+            <div class="card-content">
+                <h2 class="card-name">Phạm Thị D</h2>
+                <a href="cv4.pdf" class="card-link" target="_blank">Xem CV</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7" alt="Person 5" class="card-img">
+            <div class="card-content">
+                <h2 class="card-name">Hoàng Văn E</h2>
+                <a href="cv5.pdf" class="card-link" target="_blank">Xem CV</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
