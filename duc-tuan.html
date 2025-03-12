@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Duc Tuan - UI/UX Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-25px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+
+        .animate-pulse {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        /* Custom Glow Effect */
+        .neon-text {
+            text-shadow: 0 0 8px #66ccff, 0 0 15px #66ccff, 0 0 20px #66ccff, 0 0 25px #66ccff;
+        }
+
+        .neon-box {
+            border: 2px solid #66ccff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #66ccff;
+        }
+
+        /* Darker theme */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .bg-dark {
+            background-color: #1e1e1e;
+        }
+
+        .text-light {
+            color: #f1f1f1;
+        }
+
+        .border-dark {
+            border-color: #333;
+        }
+
+        .bg-gradient-dark {
+            background: linear-gradient(135deg, #2c2c2c, #121212);
+        }
+
+        .bg-gradient-light {
+            background: linear-gradient(135deg, #003366, #005f8a);
+        }
+
+    </style>
+</head>
+
+<body class="bg-dark text-light font-sans">
+    <div class="min-h-screen flex items-center justify-center p-8">
+        <div class="max-w-5xl w-full bg-gray-900 rounded-3xl shadow-2xl overflow-hidden border border-dark">
+            <!-- Header Section -->
+            <div class="bg-gradient-light p-12 text-center">
+                <img src="./assets/images/avtdaidien.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto border-4 border-blue-500 animate-bounce animate-pulse">
+                <h1 class="text-5xl font-bold mt-6 animate-fadeInUp neon-text">Nguyen Duc Tuan</h1>
+                <p class="text-2xl mt-3 animate-fadeInUp neon-text">UI/UX Designer</p>
+                <p class="text-xl mt-2 animate-fadeInUp text-teal-300">HUTECH University - Class of 2023</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="p-12 grid grid-cols-1 lg:grid-cols-3 gap-8 bg-gradient-dark">
+                <!-- About Me -->
+                <div class="lg:col-span-2 animate-fadeInUp" style="animation-delay: 0.2s;">
+                    <h2 class="text-3xl font-semibold text-blue-500 mb-4 neon-text">About Me</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        I’m Nguyen Duc Tuan, a UI/UX Designer with a passion for crafting intuitive and beautiful user interfaces.
+                        Holding a degree in Information Technology from HUTECH University, I specialize in user-centric designs,
+                        creating seamless and engaging experiences. Constantly exploring the intersection of design and technology.
+                    </p>
+                </div>
+
+                <!-- Quick Info -->
+                <div class="animate-fadeInUp" style="animation-delay: 0.4s;">
+                    <h2 class="text-3xl font-semibold text-blue-500 mb-4 neon-text">Quick Info</h2>
+                    <p class="text-lg text-gray-400">
+                        <strong>Location:</strong> Ho Chi Minh City, Vietnam<br>
+                        <strong>Age:</strong> 21<br>
+                        <strong>Languages:</strong> Vietnamese, English<br>
+                        <strong>Hobbies:</strong> Designing, Coding, Exploring New Design Trends
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div class="lg:col-span-3 animate-fadeInUp" style="animation-delay: 0.6s;">
+                    <h2 class="text-3xl font-semibold text-blue-500 mb-4 neon-text">Skills</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-medium text-teal-400">Design Tools</h3>
+                            <ul class="text-lg text-gray-400 list-disc list-inside mt-2">
+                                <li>Figma, Adobe XD</li>
+                                <li>Sketch, InVision</li>
+                                <li>Photoshop, Illustrator</li>
+                                <li>Wireframing & Prototyping</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-medium text-teal-400">Frontend Skills</h3>
+                            <ul class="text-lg text-gray-400 list-disc list-inside mt-2">
+                                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                <li>React.js, Vue.js</li>
+                                <li>Tailwind CSS, Bootstrap</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="lg:col-span-2 animate-fadeInUp" style="animation-delay: 0.8s;">
+                    <h2 class="text-3xl font-semibold text-blue-500 mb-4 neon-text">Experience</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-lg text-gray-400">
+                                <strong>UI/UX Designer</strong> - Freelance (2022 - Present)<br>
+                                Creating captivating UI/UX designs for web and mobile applications, ensuring user satisfaction and seamless interactions.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-400">
+                                <strong>Intern Designer</strong> - HUTECH IT Lab (2021 - 2022)<br>
+                                Assisted in designing user interfaces and prototypes for various projects, learning from senior designers and developers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
