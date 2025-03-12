@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Minh Tuan - Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Removed most animation keyframes, keeping only subtle ones */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeInUp { animation: fadeInUp 1.2s ease-out forwards; }
+        .hidden { opacity: 0; }
+        
+        /* Removed neon glow effects */
+        /* Changed cyber border to simple border */
+        .cyber-border {
+            border: 2px solid #a855f7;
+        }
+        
+        /* Removed status dots animation */
+        .status-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-dot.green { background-color: #10b981; }
+        .status-dot.blue { background-color: #3b82f6; }
+        .status-dot.purple { background-color: #a855f7; }
+    </style>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+    <div class="min-h-screen flex items-center justify-center p-8">
+        <div class="max-w-5xl w-full bg-gray-900 rounded-2xl shadow-2xl overflow-hidden border border-purple-700 cyber-border">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-purple-900 to-indigo-900 p-12 text-center">
+                <img src="./assets/images/anhavt.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto border-4 border-teal-500">
+                <h1 class="text-5xl font-bold mt-6 animate-fadeInUp">Nguyen Minh Tuan</h1>
+                <p class="text-2xl mt-3 animate-fadeInUp">Fullstack Developer</p>
+                <p class="text-xl mt-2 animate-fadeInUp text-teal-300"><span class="status-dot green"></span>HUTECH University - Class of 2023</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="p-12 grid grid-cols-1 lg:grid-cols-3 gap-8 bg-gradient-to-b from-gray-900 to-black">
+                <!-- About Me -->
+                <div class="lg:col-span-2 animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 0.2s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot blue"></span>About Me
+                    </h2>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        I'm Nguyen Minh Tuan, a Fullstack Developer passionate about crafting digital solutions. With a degree in Information Technology from HUTECH University, I develop scalable web solutions. My journey is driven by curiosity, leading me to explore both front-end and back-end development.
+                    </p>
+                </div>
+
+                <!-- Quick Info -->
+                <div class="animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 0.4s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot purple"></span>Quick Info
+                    </h2>
+                    <p class="text-lg text-gray-400">
+                        <strong>Location:</strong> Ho Chi Minh City, Vietnam<br>
+                        <strong>Age:</strong> 24<br>
+                        <strong>Languages:</strong> Vietnamese, English<br>
+                        <strong>Hobbies:</strong> Coding, Gaming, Technology
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div class="lg:col-span-3 animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 0.6s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot green"></span>Skills
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-medium text-teal-400">Frontend</h3>
+                            <ul class="text-lg text-gray-400 list-disc list-inside mt-2">
+                                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                <li>React.js, Redux, Context API</li>
+                                <li>Tailwind CSS, Bootstrap</li>
+                                <li>Responsive & Mobile-First Design</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-medium text-teal-400">Backend</h3>
+                            <ul class="text-lg text-gray-400 list-disc list-inside mt-2">
+                                <li>Node.js, Express.js</li>
+                                <li>Python, Django, Flask</li>
+                                <li>RESTful APIs, GraphQL</li>
+                                <li>MongoDB, MySQL, PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="lg:col-span-2 animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 0.8s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot blue"></span>Experience
+                    </h2>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-lg text-gray-400">
+                                <strong>Fullstack Developer</strong> - Freelance (2022 - Present)<br>
+                                Developed web applications with React for frontend and Node.js for backend development.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-lg text-gray-400">
+                                <strong>Intern Developer</strong> - HUTECH IT Lab (2021 - 2022)<br>
+                                Worked on university projects, including a student management system using React and Django.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 1s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot purple"></span>Contact
+                    </h2>
+                    <p class="text-lg text-gray-400">
+                        <strong>Email:</strong> tuan.nq003@gmail.com<br>
+                        <strong>Phone:</strong> +84 368 734 181<br>
+                        <strong>GitHub:</strong> github.com/nguyenminhtuan.io
+                    </p>
+                </div>
+
+                <!-- Tech Stack & React Courses -->
+                <div class="lg:col-span-3 animate-fadeInUp cyber-border p-6 rounded-lg" style="animation-delay: 1.2s;">
+                    <h2 class="text-3xl font-semibold text-purple-500 mb-4">
+                        <span class="status-dot green"></span>Technology Courses & React Journey
+                    </h2>
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-400 leading-relaxed">
+                            My development journey has been focused on <strong>React</strong>, a framework that enables creating dynamic UIs. Here are some key courses I've completed:
+                        </p>
+                        <ul class="text-lg text-gray-400 list-disc list-inside">
+                            <li><strong>React - The Complete Guide (Udemy):</strong> Mastered components, hooks, and state management.</li>
+                            <li><strong>Advanced React Patterns (Frontend Masters):</strong> Learned performance optimization and component architecture.</li>
+                            <li><strong>React & Redux Project (FreeCodeCamp):</strong> Built a real-time chat app with WebSocket integration.</li>
+                            <li><strong>Personal Project - E-Commerce Site:</strong> Created an online store with React, Tailwind CSS, and Node.js.</li>
+                        </ul>
+                        <p class="text-lg text-gray-400 leading-relaxed">
+                            React's component-based architecture, combined with Tailwind CSS, allows me to build responsive and user-friendly interfaces.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-gradient-to-r from-purple-900 to-indigo-900 p-6 text-center">
+                <p class="text-lg text-white animate-fadeInUp" style="animation-delay: 1.4s;">
+                    © 2025 Nguyen Minh Tuan. Built with Tailwind CSS & JavaScript.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simplified JavaScript with only essential animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Base fade-in animations
+            const elements = document.querySelectorAll('.animate-fadeInUp');
+            elements.forEach((el, index) => {
+                el.classList.add('hidden');
+                setTimeout(() => {
+                    el.classList.remove('hidden');
+                    el.style.animationDelay = `${index * 0.2}s`;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
